@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNG MENTORS</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div id="theme-open" class="fas fa-bars"></div> 
+<div class="themes-container">
+<div id="theme-close" class="fas fa-times"></div>
+          <div class="theme-toggler">  
+         </div> 
+<!-- You can change the color of the theme by clicking on the color you want. -->
+    <h3>pick a color you want:</h3>
+   <div class="container">
+<span id='1'onclick="color(color(this))"class="color clr1"></span>
+<span id='2'onclick="color(color(this))"class="color clr2"></span>
+<span onclick="color(color(this))"class="color clr3"></span>
+<span onclick="color(color(this))"class="color clr4"></span>
+<span onclick="color(color(this))"class="color clr5"></span>
+<span onclick="color(color(this))"class="color clr6"></span>
+<span onclick="color(color(this))"class="color clr7"></span>
+<span onclick="color(color(this))"class="color clr8"></span>
+<span onclick="color(color(this))"class="color clr9"></span>
+<span onclick="color(color(this))"class="color clr10"></span>
+</div>
+<h3>Change photo:</h3>
+<button type="button" onclick="openFile()">Select</button>
+<br>
+<br>
+<br>
+<h4>Change header color:</h4>
+<button style="background-color: red;" onclick="changeHeadingColor('red')">Red</button>
+<button style="background-color: blue;" onclick="changeHeadingColor('blue')">Blue</button>
+<button style="background-color: rgb(243, 251, 10);" onclick="changeHeadingColor('yellow')">Yellow</button>
+<button style="background-color: rgb(0, 0, 0);" onclick="changeHeadingColor('black')">Black</button>
+<br>
+<br>
+
+<h5>Change text color:</h5>
+<button style="background-color: red;" onclick="changeParagraphColor('red')">Red</button>
+<button style="background-color: blue;" onclick="changeParagraphColor('blue')">Blue</button>
+<button style="background-color: rgb(243, 251, 10);" onclick="changeParagraphColor('yellow')">Yellow</button>
+<button style="background-color: rgb(0, 0, 0);" onclick="changeParagraphColor('black')">Black</button>
+</div>
+<!-- header section starts and profile photo  -->
+<div class="ytm">
+    <br>
+    <br>
+    <br>
+</div>
+<div class="profile-photo">
+   
+    <img src="YMT.jpg" id="photo">
+    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+</div>
+<div class="profile-photo-text">
+    <h1 id="heading">YOUNG MENTORS</h1>
+    <p id="paragraph">Welcome to Young Mentors, the platform designed to cultivate knowledge-sharing and learning among individuals of all ages. At Young Mentors, we believe that everyone has valuable insights and experiences to offer, regardless of their age or background.
+
+        Whether you're a seasoned professional looking to impart your wisdom or a curious learner eager to expand your horizons, Young Mentors provides the perfect space to connect, collaborate, and grow together.</p>
+  
+</div>
+
+<!-- custom js file link  -->
+<script src="index.js"></script>
+
+</body>
+</html>

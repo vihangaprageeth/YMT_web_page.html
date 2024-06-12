@@ -1,0 +1,239 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); 
+
+ :root{
+  --main-color:#2980b9;
+  --black:#444;
+  --bg:#ddd;
+  --light-bg:#eee;
+  --light-color:#666;
+  --border:1px solid rgba(0,0,0,.1);
+  --box-shadow:0 5px 10px rgba(0,0,0,.1);
+} 
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition:.2s linear;
+}
+
+body{
+  background:var(--light-bg);
+  overflow: hidden;
+}
+
+
+#theme-open{
+  position: fixed;
+  top:15px; right:20px;
+  font-size: 40px;
+  color:var(--black);
+  cursor: pointer;
+  z-index: 10;
+}
+
+ .themes-container{
+  position:fixed;
+  top:0; right:-100%;
+  background:var(--bg);
+  border-left: var(--border);
+  height:100vh;
+  width:350px;
+  z-index: 1000;
+  text-align: right;
+  padding:20px; 
+} 
+
+.themes-container.active{
+    right:0;
+  }
+
+.themes-container #theme-close{
+  font-size: 40px;
+  color:var(--black);
+  cursor: pointer;
+}
+
+.themes-container h3{
+  text-align: center;
+  color:var(--black);
+  border-top: var(--border);
+  border-bottom: var(--border);
+  padding:15px 0;
+  margin:20px 0;
+}
+
+.themes-container .theme-toggler{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.themes-container .theme-toggler span{
+  color:var(--light-color);
+}
+
+.themes-container .theme-toggler .toggler{
+  height:40px;
+  width:100px;
+  border-radius: 50px;
+  background:var(--light-bg);
+  position: relative;
+  cursor: pointer;
+  border:var(--border);
+  margin:0 10px;
+}
+
+.themes-container .theme-toggler .toggler::before{
+  content:'';
+  position: absolute;
+  top:5px; left:5px;
+  height:28px;
+  width:28px;
+  border-radius: 50%;
+  background:#130ca5;
+  transition:.2s linear;
+}
+ 
+ .themes-container .theme-toggler.active .toggler::before{
+  left:65px;
+} 
+
+
+.color{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 1px;
+    cursor: pointer;
+    border: 2px solid #fff; 
+
+}
+.clr1{
+    background: #fff;
+}
+.clr2{
+    background: #c5e661;
+}
+.clr3{
+    background: #1abc9c;
+}
+.clr4{
+    background: #2ecc71;
+}
+.clr5{
+    background: #3498db;
+}
+.clr6{
+    background: #9b59b6;
+}
+.clr7{
+    background: #f1c40f;
+}
+.clr8{
+    background: #e67e22;
+}
+.clr9{
+    background: #e74c3c;
+}
+.clr10{
+    background: #147d97;
+}
+
+.profile-photo {
+    text-align: center;
+  }
+  
+  .profile-photo h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .profile-photo img {
+    width: 80vh; 
+    height: 50vh;
+    margin-bottom: 10px;
+  }
+  
+  .profile-photo button {
+    background-color: #18b618; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .profile-photo button:hover {
+    background-color: #45a049; 
+  }
+  .themes-container button {
+    background-color: #d41fc8; 
+    border: none;
+    color: white;
+    padding: 10px 130px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  }
+  
+  .themes-container button:hover {
+    background-color: #d41919; 
+    
+
+  }
+  .themes-container h4{
+    font-size: 25px;
+    color: #000000a9;
+    margin-bottom: 10px;
+    
+  }
+
+  .profile-photo-text h1{
+    font-size: 60px;
+  
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-photo-text p{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+.themes-container button {
+  background-color: #000000; 
+  border: none;
+  color: white;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+.themes-container h5{
+  font-size: 25px;
+  color: #000000a9;
+  margin-bottom: 10px;
+  
+}
